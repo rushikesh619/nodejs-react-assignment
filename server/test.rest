@@ -1,0 +1,29 @@
+# POST http://localhost:3003/api/categories/addCategori
+# Content-Type: application/json
+
+# {
+#     "name":"Sports"
+# }
+
+# POST http://localhost:3002/api/subCategories/addSubcategorie
+# Content-Type: application/json
+
+# {
+#     "name":"Camera",
+#     "categorie":"6139018bd23c6e8d6b3906c3"
+# }
+
+# POST http://localhost:3002/api/products/addProducts
+# Content-Type: application/json
+
+# {
+#     "name":"Fujifilm Camera",
+#     "subCategorie":"61390d36a47d7ba049846235",
+#     "categorie":"6139018bd23c6e8d6b3906c3"
+# }
+
+# get http://localhost:3002/api/subCategories/getSubcategoriesForCategory/61390160d23c6e8d6b3906c1
+
+# get http://localhost:3002/api/products/getProductsForSubCategory/61390d36a47d7ba049846235
+
+get http://localhost:3002/api/products/getAllProducts
