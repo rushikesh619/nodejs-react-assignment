@@ -25,12 +25,12 @@ app.use(
   })
 );
 
-app.get('*.*', express.static(__dirname + './../client/build'));
+app.get("*.*", express.static(__dirname + "./client/build"));
 
 api(app);
 
-app.all('*', function (req, res) {
-  res.status(200).sendFile(`/`, { root: __dirname + './../client/build' });
+app.all("*", function (req, res) {
+  res.status(200).sendFile(`/`, { root: __dirname + "./client/build" });
 });
 
 const port = process.env.PORT || 3002;
